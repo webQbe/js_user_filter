@@ -42,3 +42,25 @@ body{
 
 }
 
+
+.title {
+    
+    margin: 0;
+}
+
+.subtitle{
+
+    display: inline-block; /* Makes an element behave as a hybrid between inline and block elements, combining features from both types.  
+
+        Width and Height    : Can be set
+        Line Break          : Does not cause a line break
+        Respects Box Model  : Fully respects width and height
+        Can Sit Inline      : Yes
+    
+    */
+    margin: 5px 0 20px; /* Top & Left-Right & Bottom */
+    opacity: 0.8;
+
+}
+
+
