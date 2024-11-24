@@ -18,3 +18,27 @@ body{
     overflow: hidden; /* No scrollbars */
     margin: 0; /* No margins */
 }
+
+/* Style container element */
+.container{
+
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Applies a shadow effect around an element's box. 
+    
+        3px: Horizontal offset — moves the shadow horizontally. 3px places shadow towards 3px right side of the element.
+
+        3px: Vertical offset — moves the shadow vertically. 3px places the shadow 3 pixels below the element.
+
+        10px: Blur radius — controls the blur of the shadow. A higher value results in a softer, more spread-out shadow. Here, 10px creates a moderately soft shadow.
+
+        rgba(0, 0, 0, 0.2): Shadow color with transparency.
+
+            rgba stands for Red, Green, Blue, and Alpha (opacity).
+            0, 0, 0 represents black.
+            0.2 sets the opacity to 20%, making the shadow slightly visible.
+        */
+    overflow: hidden;
+    width: 300px;
+
+}
+
