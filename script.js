@@ -18,15 +18,32 @@ async function getData(){/* 1. async Keyword
         await ensures that 'results' available in the parsed JSON once the Promise returned by res.json() is resolved.
     */
 
+    
     // Clear existing results in UI
     result.innerHTML = '';
 
     // Loop Through Results Array
     results.forEach(user => {
 
-        // Log current user
         console.log(user);
 
+        // Create list item for current user
+        const li = document.createElement('li');
+
+        // Add list item to listItems array
+        listItems.push(li);  
+
+        // Add data to list item
+        li.innerHTML = `
+            <img src="${user.picture.thumbnail}" alt="${user.name.first}">
+            <div class="user-info">
+                <h4>${user.name.first} ${user.name.last}</h4>
+                <p>${user.location.city}, ${user.location.country}</p>
+            </div>`;
+
+        // Append list item to result element
+        result.appendChild(li);
+      
     })
 
 }
