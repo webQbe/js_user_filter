@@ -13,12 +13,21 @@ async function getData(){/* 1. async Keyword
         await pauses the execution of the function until the fetch Promise is resolved. This ensures that 'res' contains the response from the server.
     */
 
-    const data = await res.json(); /* 3. Convert Response to JSON
+    const { results } = await res.json(); /* 3. Convert Response to JSON
         res.json() is called on the Response object (res) returned by fetch. This method parses the JSON body of the response into a JavaScript object.
-        await ensures that 'data' contains the parsed JSON once the Promise returned by res.json() is resolved.
+        await ensures that 'results' available in the parsed JSON once the Promise returned by res.json() is resolved.
     */
 
-    console.log(data);
+    // Clear existing results in UI
+    result.innerHTML = '';
+
+    // Loop Through Results Array
+    results.forEach(user => {
+
+        // Log current user
+        console.log(user);
+
+    })
 
 }
 
