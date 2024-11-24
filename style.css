@@ -44,7 +44,7 @@ body{
 
 
 .title {
-    
+
     margin: 0;
 }
 
@@ -63,4 +63,28 @@ body{
 
 }
 
+.header{
 
+    background-color: #3e57db;
+    color: #fff;
+    padding: 30px 20px; /* Top-Bottom & Left-Right */
+
+}
+
+.header input {
+
+    background-color: rgba(0,0,0,0.3); /* Black with opacity */
+    border: 0; /* Remove border */
+    border-radius: 50px; 
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%; /* Take full header width */
+
+}
+
+.header input:focus{
+
+    outline: none; /* Remove focus outline */
+
+}
