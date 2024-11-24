@@ -88,3 +88,68 @@ body{
     outline: none; /* Remove focus outline */
 
 }
+
+/* Style Result List */
+.user-list{
+
+    background-color: #fff;
+    list-style-type: none; /* Remove list bullet points */
+    margin: 0;
+    padding: 0; /* Remove padding */
+    max-height: 400px;
+    overflow-y: auto; /* Add vertical scrollbar when needed */
+
+}
+
+
+/* Style Result Element*/
+.user-list li {
+
+    display: flex; /* X align child elements  */
+    padding: 20px;
+
+}
+
+.user-list img {
+
+    border-radius: 50%; /* Circle shaped image */
+    object-fit: cover; /* Show whole image */
+    height: 50px;
+    width: 50px;
+
+}
+
+/* Style User Info Section */
+.user-list .user-info {
+
+    margin-left: 10px; /* Push towards right */
+    
+}
+
+.user-list .user-info h4 {
+
+    margin: 0 0 10px; /* Remove top, left & right margins */
+
+}
+
+
+.user-list .user-info p {
+
+    font-size: 12px;
+
+} 
+
+/* Add Style to All List Items Except Last Item */
+.user-list li:not(:last-of-type){
+
+    border-bottom: 1px solid #eee;
+
+}
+
+/* Add this style to hide a user */
+.user-list li.hide {
+
+    display: none;
+
+}
+
