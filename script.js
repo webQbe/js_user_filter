@@ -53,3 +53,10 @@ getData();
 // Listen for input events in filter element &
 // call filterData() with input value
 filter.addEventListener('input', (e) => filterData(e.target.value));
+
+
+function filterData(searchTerm){
+
+    console.log(searchTerm);
+
+}
