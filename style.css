@@ -1,0 +1,20 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+
+    /* Apply to all elements */
+    box-sizing: border-box; /* Ensures padding and borders are included within the element's specified width and height, making layout calculations more predictable. */
+
+}
+
+body{
+    background-color: #f8f9fd;
+    font-family: 'Roboto', sans-serif;
+    display: flex; /* Align horizontally */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Take full height */
+    overflow: hidden; /* No scrollbars */
+    margin: 0; /* No margins */
+}
