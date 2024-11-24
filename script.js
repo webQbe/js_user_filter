@@ -57,6 +57,22 @@ filter.addEventListener('input', (e) => filterData(e.target.value));
 
 function filterData(searchTerm){
 
-    console.log(searchTerm);
+    listItems.forEach(item => {
+    
+        // Covert all item text to lower case
+        if(item.innerText.toLowerCase()
+           // Check if item text includes search term
+          .includes(searchTerm.toLowerCase())){ 
+                
+                // If searchTerm found in item text
+                item.classList.remove('hide');
+        
+            } else {
+
+                // If searchTerm not found
+                item.classList.add('hide');
+
+            }
+    })
 
 }
